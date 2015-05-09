@@ -7,14 +7,46 @@
     android:id="@+id/"
     android:background="#ff4000">
 
-    <TextView android:text="Welcome to Eric&apos;s Procore Application" android:layout_width="wrap_content"
+    <TextView android:text="@string/WelcomeTitle1" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="186dp"
-        android:id="@+id/"
-        android:textSize="20dp"
+        android:layout_marginTop="153dp"
+        android:id="@+id/WelcomeText"
+        android:textSize="30sp"
         android:textColor="#000000"
         android:textIsSelectable="false"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ContinueButton"
+        android:id="@+id/ContinueButton"
+        android:layout_marginTop="97dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/procore_logo"
+        android:contentDescription="@string/Procore_Logo"
+        android:layout_below="@+id/WelcomeText"
+        android:layout_alignLeft="@+id/WelcomeText"
+        android:layout_alignStart="@+id/WelcomeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/WelcomeTitle2"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

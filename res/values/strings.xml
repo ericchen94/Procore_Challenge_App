@@ -8,4 +8,9 @@
     <string name="WelcomeTitle2">Application</string>
     <string name="ContinueButton">Continue</string>
     <string name="Procore_Logo">Procore Logo</string>
+    <string name="title_activity_prompt_number_input">Number Input</string>
+    <string name="Integer_Prompt">Please enter an integer between 2 and 15</string>
+    <string name="Integer_Input">Size</string>
+    <string name="Eratosthenes_Continue">Eratosthenes, work your magic!</string>
+    <string name="title_activity_sieve_of_eratosthenes">SieveOfEratosthenesActivity</string>
 </resources>

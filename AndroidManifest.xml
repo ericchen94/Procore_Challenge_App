@@ -20,6 +20,22 @@
             android:name=".MainActivity2Activity"
             android:label="@string/title_activity_main_activity2" >
         </activity>
+        <activity
+            android:name=".PromptNumberInputActivity"
+            android:label="@string/title_activity_prompt_number_input"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ricky.procore_challenge_app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SieveOfEratosthenesActivity"
+            android:label="@string/title_activity_sieve_of_eratosthenes"
+            android:parentActivityName=".PromptNumberInputActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ricky.procore_challenge_app.PromptNumberInputActivity" />
+        </activity>
     </application>
 
 </manifest>

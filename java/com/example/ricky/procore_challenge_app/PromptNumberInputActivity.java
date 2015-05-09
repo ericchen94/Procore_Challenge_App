@@ -1,37 +1,25 @@
 package com.example.ricky.procore_challenge_app;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.content.Intent;
 
 
-public class MainActivity extends ActionBarActivity {
+public class PromptNumberInputActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Button ContinueButton = (Button)findViewById(R.id.ContinueButton);
-
-        ContinueButton.setOnClickListener(
-            new Button.OnClickListener(){
-                public void onClick(View view){
-                    
-                }
-            }
-        );
+        setContentView(R.layout.activity_prompt_number_input);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_prompt_number_input, menu);
         return true;
     }
 
@@ -51,8 +39,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /** Called when the user clicks the Continue button */
-    public void continueToNumberInput(View view) {
-        Intent intent = new Intent(this, PromptNumberInputActivity.class);
+    public void continueToBoard(View view) {
+        Intent intent = new Intent(this, SieveofEratosthenesActivity.class);
     }
-
 }

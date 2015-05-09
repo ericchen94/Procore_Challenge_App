@@ -40,6 +40,6 @@ public class PromptNumberInputActivity extends ActionBarActivity {
 
     /** Called when the user clicks the Continue button */
     public void continueToBoard(View view) {
-        Intent intent = new Intent(this, SieveofEratosthenesActivity.class);
+        Intent intent = new Intent(this, SieveOfEratosthenesActivity.class);
     }
 }

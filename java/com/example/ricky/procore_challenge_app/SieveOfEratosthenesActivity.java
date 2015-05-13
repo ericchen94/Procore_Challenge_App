@@ -8,6 +8,8 @@ import android.view.MenuItem;
 
 public class SieveOfEratosthenesActivity extends ActionBarActivity {
 
+    private int upperBound;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,4 +37,6 @@ public class SieveOfEratosthenesActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

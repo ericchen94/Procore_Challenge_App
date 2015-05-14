@@ -12,6 +12,7 @@ public class NumberSquare {
     float y;
     float length;
     public boolean isPrime = false;
+    public Paint color;
 
     // Constructor for Square
     public NumberSquare(float x, float y, float length){
@@ -23,13 +24,13 @@ public class NumberSquare {
 
     // Chooses square, which is prime, to find multiples of that number
     // Colors the square GREEN
-    public void Prime(int number){
+    public void colorGreen(){
 
     }
 
     // "Marks" square if it is not a prime
     // Colors the square RED
-    public void notPrime(int number){
+    public void colorRed(){
 
     }
 
